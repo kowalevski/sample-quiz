@@ -8,7 +8,7 @@ type Props = {
 
 const Note: React.FC<Props> = ({ note }) => (
   <Box pad="small" background="dark-3" margin="xsmall" animation="slideUp">
-    {note.text}
+    <p>{note.text}</p>
   </Box>
 );
 
