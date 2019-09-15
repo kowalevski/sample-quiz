@@ -60,10 +60,30 @@ describe("ControlPanel component", () => {
           .simulate("click");
       });
 
+      afterEach(() => {
+        wrapper
+          .find('[data-test-id="Button.Clear"]')
+          .at(1)
+          .simulate("click");
+      });
+
       it("adding new note to notes list in state", () => {
         const state: State = wrapper.state() as State;
         expect(state.notes.length).toBe(1);
         expect(state.notes[0].text).toBe(noteText);
+      });
+
+      describe("re-mounting the component", () => {
+        let wrapper2;
+
+        beforeEach(() => {
+          wrapper2 = mount(<ControlPanel />);
+        });
+
+        it("takes stored notes from local storage", () => {
+          const state: State = wrapper2.state() as State;
+          expect(state.notes).toEqual([{ text: noteText }]);
+        });
       });
 
       describe('clicking a button "Clear"', () => {
