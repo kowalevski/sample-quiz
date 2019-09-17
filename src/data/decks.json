@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Capitals",
+    "id": "0",
+    "cards": [
+      {
+        "id": "0",
+        "note": "Japan",
+        "field": "Tokyo"
+      },
+      {
+        "id": "1",
+        "note": "USA",
+        "field": "Washington D.C."
+      },
+      {
+        "id": "2",
+        "note": "Germany",
+        "field": "Berlin"
+      }
+    ]
+  },
+  {
+    "title": "Greetings",
+    "id": "1",
+    "cards": [
+      {
+        "id": "0",
+        "note": "English",
+        "field": "Hello!"
+      },
+      {
+        "id": "1",
+        "note": "German",
+        "field": "Hallo!"
+      },
+      {
+        "id": "2",
+        "note": "French",
+        "field": "Bonjour!"
+      }
+    ]
+  },
+  {
+    "title": "Countries cars",
+    "id": "2",
+    "cards": [
+      {
+        "id": "0",
+        "note": "USA",
+        "field": "Ford"
+      },
+      {
+        "id": "1",
+        "note": "German",
+        "field": "BMW"
+      },
+      {
+        "id": "2",
+        "note": "Japan",
+        "field": "Mitsubishi"
+      }
+    ]
+  }
+]
