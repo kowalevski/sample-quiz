@@ -1,7 +1,10 @@
 import { SET_DECK } from "./actionTypes";
 import { Deck } from "../types";
+import { SetDeckAction } from "./actionTypes";
 
-export const setDeck = (payload: Deck) => ({
+export type SetDeckActionCreator = (payload: Deck) => SetDeckAction;
+
+export const setDeck: SetDeckActionCreator = payload => ({
   type: SET_DECK,
   payload
 });

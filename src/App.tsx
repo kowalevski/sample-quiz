@@ -1,9 +1,10 @@
 import React from "react";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { Grommet, Box } from "grommet";
 import Home from "./Home";
 import Notes from "./Notes";
 import Memorize from "./Memorize";
+import Deck from "./Deck";
 
 import "./App.css";
 
@@ -14,6 +15,7 @@ const App: React.FC = () => (
         <Route exact path="/" component={Home} />
         <Route path="/notes" component={Notes} />
         <Route path="/memorize" component={Memorize} />
+        <Route path="/deck" component={Deck} />
       </Switch>
     </Box>
   </Grommet>
