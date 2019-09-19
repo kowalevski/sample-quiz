@@ -2,7 +2,7 @@ import React from "react";
 import DeckList from "./DeckList";
 import NavLink from "./NavLink";
 
-const Anki: React.FC = () => (
+const Memorize: React.FC = () => (
   <>
     <h1>Memorize</h1>
     <p>kind of Anki</p>
@@ -13,4 +13,4 @@ const Anki: React.FC = () => (
   </>
 );
 
-export default Anki;
+export default Memorize;

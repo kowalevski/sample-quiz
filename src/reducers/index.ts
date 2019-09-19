@@ -4,7 +4,9 @@ import {
   SET_DECK,
   SetDeckAction,
   LOAD_DECKS,
-  LoadDecksAction
+  LoadDecksAction,
+  ADD_DECK,
+  AddDeckAction
 } from "../actions/actionTypes";
 import { DeckStore, DecksStore, RootStore } from "../types";
 
@@ -17,10 +19,15 @@ const deckReducer = (state: DeckStore = null, action: SetDeckAction) => {
   }
 };
 
-const decksReducer = (state: DecksStore = [], action: LoadDecksAction) => {
+const decksReducer = (
+  state: DecksStore = [],
+  action: LoadDecksAction | AddDeckAction
+) => {
   switch (action.type) {
     case LOAD_DECKS:
       return action.payload;
+    case ADD_DECK:
+      return [...state, action.payload];
     default:
       return state;
   }
