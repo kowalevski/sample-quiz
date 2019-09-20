@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
-import Note from "./Note";
+import Note from "../Note";
 
 const testText = "test text";
 const props = {

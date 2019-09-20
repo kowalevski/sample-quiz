@@ -1,7 +1,6 @@
 import React from "react";
-// import { BrowserRouter } from "react-router-dom";
 import { shallow } from "enzyme";
-import Memorize from "./Memorize";
+import Memorize from "../Memorize";
 
 describe("Memorize component", () => {
   const wrapper = shallow(<Memorize />);

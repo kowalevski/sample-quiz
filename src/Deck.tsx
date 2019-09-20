@@ -12,7 +12,7 @@ type StateProps = {
 
 type Props = {} & StateProps;
 
-const Deck: React.FC<Props> = ({ deck }) => {
+export const Deck: React.FC<Props> = ({ deck }) => {
   if (!deck)
     return (
       <>

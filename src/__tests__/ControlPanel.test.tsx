@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
-import ControlPanel, { State } from "./ControlPanel";
+import ControlPanel, { State } from "../ControlPanel";
 
 describe("ControlPanel component", () => {
   let wrapper = mount(<ControlPanel />);
