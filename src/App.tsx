@@ -7,6 +7,7 @@ import Memorize from "./Memorize";
 import Deck from "./Deck";
 import DeckControl from "./DeckControl";
 import Quiz from "./Quiz";
+import Category from "./Quiz/Category";
 
 import "./App.css";
 
@@ -19,7 +20,8 @@ const App: React.FC = () => (
         <Route path="/memorize" component={Memorize} />
         <Route path="/deck" component={Deck} />
         <Route path="/deck-control" component={DeckControl} />
-        <Route path="/quiz" component={Quiz} />
+        <Route exact path="/quiz" component={Quiz} />
+        <Route path="/quiz/category/:id" component={Category} />
       </Switch>
     </Box>
   </Grommet>

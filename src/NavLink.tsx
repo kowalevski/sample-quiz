@@ -14,10 +14,15 @@ const StyledNavLink = styled.div`
 
 type Props = {
   label: React.ReactNode;
+  background?: string;
 };
 
-const NavLink: React.FC<LinkProps & Props> = ({ to, label }) => (
-  <Box margin="xsmall" background="dark-2" pad="xsmall">
+const NavLink: React.FC<LinkProps & Props> = ({
+  to,
+  label,
+  background = "dark-2"
+}) => (
+  <Box margin="xsmall" background={background} pad="xsmall">
     <StyledNavLink>
       <Link to={to}>{label}</Link>
     </StyledNavLink>

@@ -13,4 +13,5 @@ export default function(
   }
 }
 
-export const getCategories = (state: RootStore) => state.categories;
+export const getCategories = (state: RootStore): CategoryStore =>
+  state.categories;
